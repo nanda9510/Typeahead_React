@@ -32,16 +32,17 @@ table {
     border-spacing: 0;
 }
 
-
+/* 
 body{
 
     margin:0
-}
+} */
 
 h4{
     color: #0c8d9e;
-    font-size: xx-large;
-    
+    font-size: large;
+    animation: hanimate 3s linear infinite ;
+    padding-top: 3%;
 }
 
 .form 
@@ -74,7 +75,8 @@ h4{
 .outer
 {
     height:100vh;
-    width:100%;      
+    width:100%;   
+    margin :0px;   
     background-image: linear-gradient(90deg,#0885a1,#080b0f);
     position: relative;
     user-select: none;
@@ -83,11 +85,7 @@ h4{
     justify-content: center;
 }
 
-.heading
-{
-    padding-top: 2%;
-    font-size: large;
-}
+
 input{
     
     
@@ -103,6 +101,8 @@ input{
     padding-left: 15px;
     padding-right: 15px;
     z-index:0;
+    animation: bganimate 5s ;
+    animation-delay: 1s;
     
 }
 
@@ -126,8 +126,6 @@ ul{
     overflow:auto;
     background-color:#151b1f;
     z-index:1;
-    animation-name: list-animate;
-    animation-duration: 2s;
    
     
 }
@@ -184,6 +182,26 @@ ul{
         left:21%
     }
 
+}
+
+@keyframes bganimate{
+
+    0% {
+        background-color: white;
+      }
+      100% {
+        background-color: #0c8d9e;
+      }
+}
+
+@keyframes hanimate{
+
+    0% {
+        color: white;
+      }
+      100% {
+        color: #0c8d9e;
+      }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
