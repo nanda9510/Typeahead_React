@@ -1,0 +1,207 @@
+*{
+    font-family: 'Segoe UI', 'Roboto', arial, sans-serif;
+    box-sizing:border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;    
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body{
+
+    margin:0
+}
+
+h4{
+    color: #0c8d9e;
+    font-size: xx-large;
+    
+}
+
+.form 
+{
+    
+    text-align: center;     
+    border:1px solid white;
+    width:50%;
+    height:70vh;
+    background-color:#212121;
+    position:relative;
+   
+}
+
+.color
+{    
+    /* display: inline-block; */
+   
+    
+
+    position: absolute;
+    width:100%;
+    top: 30%;
+    left:30%;
+    
+    
+  
+}
+
+.outer
+{
+    height:100vh;
+    width:100%;      
+    background-image: linear-gradient(90deg,#0885a1,#080b0f);
+    position: relative;
+    user-select: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading
+{
+    padding-top: 2%;
+    font-size: large;
+}
+input{
+    
+    
+            
+    width:40%; 
+    display: block;
+    height:40px;
+    font-weight: bold;
+    color:white;
+    border:0;
+   
+    background-color:#0c8d9e;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index:0;
+    
+}
+
+
+
+::placeholder{
+
+    color: white    ;
+}
+ul{
+    
+
+    width:40%;
+    max-height:20vh;
+    text-align: left;
+    padding:5px 5px 5px 5px;
+    margin-top: 5;
+    color:white;
+    border-bottom-left-radius: 5px;  
+    border-bottom-right-radius: 5px;   
+    overflow:auto;
+    background-color:#151b1f;
+    z-index:1;
+    animation-name: list-animate;
+    animation-duration: 2s;
+   
+    
+}
+
+
+
+li:hover{
+background-color: gray;
+cursor: pointer;
+
+}
+
+li{
+
+    padding-left:10px;
+    padding-top: 4px;
+    padding-bottom:0;
+    list-style-type: none;
+    height:1.5em;
+    border-bottom: 0.5px solid #0c8d9e;
+}
+
+@media only screen and (max-width: 600px) {
+.form{
+    width:80%;
+}
+input{
+    width:60%;
+    }
+ul{
+    width:60%;
+}
+.color{
+
+    left:20%
+}
+
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .form{
+        width:80%;
+    }
+    input{
+        width:60%;
+        }
+    ul{
+        width:60%;
+    }
+    .color{
+
+        left:21%
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+   
+    .color{
+
+        left:21%
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+   
+}
+
